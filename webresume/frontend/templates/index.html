@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 
 <html lang="en">
@@ -12,7 +13,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
-  <link href="style.css" rel="stylesheet">
+  <link href="{% static 'files/style.css' %}" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="http://162.246.157.124:8000">
-        <img src="./images/favicon.png" width="32px">
+        <img src="{% static 'images/favicon.png' %}" width="32px">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -86,7 +87,7 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="first-slide" src="./images/cover.png" alt="First slide">
+          <img class="first-slide" src="{% static 'images/cover.png' %}" alt="Cover">
           <div class="container">
             <div class="carousel-caption">
               <h1 id="name"/>
@@ -107,7 +108,7 @@
     <section class="jumbotron text-center">
       <div class="container">
         <h1 class="display-3">About Me</h1>
-        <img class="rounded-circle-bordered" src="./images/aboutme.jpg" alt="Generic placeholder image" width="140" height="140">
+        <img class="rounded-circle-bordered" src="{% static 'images/aboutme.jpg' %}" alt="My Face" width="140" height="140">
         <p id="about" class="lead" style="margin-top: 20px"/>
         <p class="lead" style="margin-top: 20px">
           I can be found on
