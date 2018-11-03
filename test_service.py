@@ -13,6 +13,7 @@ def test_divide(bad_random):
     assert service.divide(1) == 10
     assert service.divide(-1) == -10
     assert service.divide(2) == 5
+    assert service.divide(0.5) == 20
 
 def test_abs_plus():
     assert service.abs_plus(-1) == 2
@@ -24,4 +25,4 @@ def test_abs_plus():
 def test_complicated_function(bad_random):
     assert service.complicated_function(10) == (1, 0)
     assert service.complicated_function(-2) == (-5, 0)
-    assert service.complicated_function(0.5) == (2, 0)
+    assert service.complicated_function(0.5) == (20, 0)
