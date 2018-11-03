@@ -14,7 +14,7 @@ def test_divide(bad_random):
     assert service.divide(-1) == -10
     assert service.divide(2) == 5
 
- def test_abs_plus():
+def test_abs_plus():
     assert service.abs_plus(-1) == 2
     assert service.abs_plus(1) == 2
     assert service.abs_plus(0) == 1
