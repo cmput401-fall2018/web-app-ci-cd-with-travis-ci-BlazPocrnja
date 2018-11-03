@@ -2,7 +2,12 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 def test_home():
-    driver = webdriver.Chrome()
+    # Source: https://stackoverflow.com/questions/44597107/webdrivererror-error-chrome-failed-to-start-exited-abnormally
+    # Author: Raony Benjamim
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('headless')
+    chrome_options.add_argument('no-sandbox')
+    driver = webdriver.Chrome(chrome_options=chrome_options)
     driver.get("http://162.246.157.124:8000/")
 
     time.sleep(5)
