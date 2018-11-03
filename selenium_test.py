@@ -3,7 +3,10 @@ from selenium.webdriver.common.keys import Keys
 
 def test_home():
     driver = webdriver.Chrome()
-    driver.get("http://127.0.0.1:8000")
+    driver.get("http://162.246.157.124:8000/")
+
+    time.sleep(5)
+
     name = driver.find_element_by_id("name")
     about = driver.find_element_by_id("about")
     skills = driver.find_element_by_id("skills")
@@ -17,3 +20,5 @@ def test_home():
     assert education != None
     assert work != None
     assert contact != None
+
+    driver.quit()
