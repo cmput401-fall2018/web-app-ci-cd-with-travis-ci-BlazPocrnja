@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import time
 
 def test_home():
     # Source: https://stackoverflow.com/questions/44597107/webdrivererror-error-chrome-failed-to-start-exited-abnormally
